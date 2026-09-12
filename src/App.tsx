@@ -1,0 +1,35 @@
+import { useState } from "react";
+
+import Navbar from "./components/Navbar";
+import type { Technology } from "./types";
+
+function App() {
+  const [stack, setStack] = useState<Technology[]>([]);
+
+  function handleAdd(tech: Technology) {
+    const alreadyExists = stack.some((item) => item.id === tech.id);
+    if (alreadyExists) {
+      alert("Already added!");
+      return;
+    }
+    setStack([...stack, tech]);
+  }
+
+  function handleRemove(id: string) {
+    const updatedStack = stack.filter((item) => item.id !== id);
+    setStack(updatedStack);
+  }
+
+  function handleRemoveAll() {
+    setStack([]);
+  }
+
+  return (
+    <div>
+      <Navbar />
+      
+    </div>
+  );
+}
+
+export default App;
