@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TechGrid from "./components/TechGrid";
 import type { Technology } from "./types";
+import Footer from "./components/Footer";
 
 function App() {
   const [stack, setStack] = useState<Technology[]>([]);
@@ -36,6 +37,7 @@ function App() {
         onRemove={handleRemove}
         onRemoveAll={handleRemoveAll}
       />
+      <Footer />
     </div>
   );
 }
