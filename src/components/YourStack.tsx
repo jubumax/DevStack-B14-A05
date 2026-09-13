@@ -24,9 +24,12 @@ function YourStack({ stack, onRemove, onRemoveAll }: YourStackProps) {
                 <div className="flex flex-col gap-3">
                     {stack.map((item) => (
                         <div key={item.id} className="flex items-center justify-between border rounded-lg p-3">
-                            <div>
-                                <p className="font-medium text-sm">{item.name}</p>
-                                <p className="text-xs text-gray-400">{item.category}</p>
+                            <div className="flex items-center gap-2">
+                                <img src={item.icon} alt={item.name} className="w-6 h-6" />
+                                <div>
+                                    <p className="font-medium text-sm">{item.name}</p>
+                                    <p className="text-xs text-gray-400">{item.category}</p>
+                                </div>
                             </div>
                             <button onClick={() => onRemove(item.id)}>✕</button>
                         </div>
