@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import TechGrid from "./components/TechGrid";
 import type { Technology } from "./types";
 
 function App() {
@@ -29,7 +30,12 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      
+      <TechGrid
+        stack={stack}
+        onAdd={handleAdd}
+        onRemove={handleRemove}
+        onRemoveAll={handleRemoveAll}
+      />
     </div>
   );
 }
