@@ -52,7 +52,7 @@ function TechCard({ tech, onAdd, isAdded }: TechCardProps) {
             <p className="text-gray-500 text-sm mt-1 flex-1">{tech.description}</p>
 
             <div className="flex items-center gap-3 text-xs text-gray-500 mt-3">
-                <span className="bg-gray-100 px-2 py-1 rounded">{tech.category}</span>
+                <span className="bg-gray-100 px-2 py-1 rounded font-medium">{tech.category}</span>
                 <span>{tech.difficulty}</span>
                 <span className="font-bold">⭐ {tech.rating}</span>
             </div>
