@@ -1,3 +1,5 @@
+import logo from "../assets/logo-text.png";
+
 function Footer() {
     return (
         <footer className="bg-white border-t">
@@ -6,12 +8,7 @@ function Footer() {
                 {/* Brand block */}
                 <div className="max-w-xs">
                     <div className="flex items-center gap-2 mb-3">
-                        <div className="bg-gradient-to-br from-orange-500 via-pink-500 to-violet-600 text-white font-bold w-7 h-7 rounded-md flex items-center justify-center text-xs">
-                            DS
-                        </div>
-                        <span className="font-bold">
-                            Dev<span className="text-pink-600">Stack</span>
-                        </span>
+                        <img src={logo} alt="Dev Stack" className="h-7" />
                     </div>
                     <p className="text-sm text-gray-500 mb-3">
                         Curated tools, technologies, and resources for developers building modern software.
