@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import type { Technology } from "./types";
 
@@ -27,6 +28,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <Hero />
       
     </div>
   );
