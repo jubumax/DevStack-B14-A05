@@ -105,3 +105,4 @@ A parent component passes data to a child component through props.
 To send something back, the parent can pass a function to the child. The child then calls that function with the required data.
 
 In this project, `App` passes the `onAddToStack` function to `TechnologyCard`. When the user clicks **Add to Stack**, the child component calls the function and sends the selected technology back to the parent.
+ 
