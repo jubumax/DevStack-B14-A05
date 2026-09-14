@@ -1,6 +1,21 @@
 import { useState } from "react";
 import logo from "../assets/logo-text.png";
 
+function getLinkHref(link: string) {
+  switch (link) {
+    case "Home":
+      return "#";
+    case "Technologies":
+    case "Projects":
+      return "#technologies";
+    case "About":
+    case "Contact":
+      return "#footer";
+    default:
+      return "#";
+  }
+}
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
@@ -41,7 +56,7 @@ function Navbar() {
             {["Home", "Technologies", "Projects", "About", "Contact"].map((link) => (
               <a
                 key={link}
-                href={`#${link.toLowerCase()}`}
+                href={getLinkHref(link)}
                 onClick={() => setActiveLink(link)}
                 className={activeLink === link ? "text-pink-600" : "text-gray-700"}
               >
@@ -60,7 +75,7 @@ function Navbar() {
       </div>
 
       {/* Mobile dropdown — only nav links, since Sign In/Up already shown above */}
-      
+
       {isMenuOpen && (
         <nav className="md:hidden flex flex-col gap-4 px-6 pb-4">
           {["Home", "Technologies", "Projects", "About", "Contact"].map((link) => (

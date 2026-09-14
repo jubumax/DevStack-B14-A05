@@ -25,7 +25,7 @@ function TechGrid({ stack, onAdd, onRemove, onRemoveAll }: TechGridProps) {
   }
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
+    <section id="technologies" className="max-w-6xl mx-auto px-6 py-16">
       <h2 className="text-3xl font-bold mb-2">
         Explore the <span className="text-pink-600">Technologies</span>
       </h2>
@@ -33,7 +33,7 @@ function TechGrid({ stack, onAdd, onRemove, onRemoveAll }: TechGridProps) {
         Pick one technology per category to build your ideal stack.
       </p>
 
-      <div className="flex gap-8 items-start">
+      <div className="flex flex-col lg:flex-row gap-8 items-start">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
           {technologies.map((tech) => (
             <TechCard
@@ -45,7 +45,7 @@ function TechGrid({ stack, onAdd, onRemove, onRemoveAll }: TechGridProps) {
           ))}
         </div>
 
-        <div className="w-72 flex-shrink-0">
+        <div className="w-full lg:w-72 flex-shrink-0">
           <YourStack stack={stack} onRemove={onRemove} onRemoveAll={onRemoveAll} />
         </div>
       </div>

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .brand-gradient {
   background-image: linear-gradient(to bottom right, #f97316, #ec4899, #7c3aed);
 }

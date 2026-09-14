@@ -19,12 +19,18 @@ function Hero() {
                 </p>
 
                 <div className="mt-8 flex gap-4">
-                    <button className="bg-gradient-to-r from-orange-500 to-pink-600 text-white font-medium px-6 py-3 rounded-lg">
+                    <a
+                        href="#technologies"
+                        className="bg-gradient-to-r from-orange-500 to-pink-600 text-white font-medium px-6 py-3 rounded-lg transition-transform hover:scale-105 hover:shadow-lg inline-block"
+                    >
                         Explore Technologies
-                    </button>
-                    <button className="border border-gray-300 font-medium px-6 py-3 rounded-lg">
+                    </a>
+                    <a
+                        href="#technologies"
+                        className="border border-gray-300 font-medium px-6 py-3 rounded-lg transition-colors hover:bg-gray-50 hover:border-gray-400 inline-block"
+                    >
                         Learn More
-                    </button>
+                    </a>
                 </div>
             </div>
 

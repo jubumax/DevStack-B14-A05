@@ -1,6 +1,16 @@
-# Dev Stack Builder
+## 💻 Project Name
 
-A modern and responsive React application that helps developers explore different technologies and build their ideal development stack. Users can browse technologies, compare their details, and add their preferred technologies to a personal stack.
+**DevStack**
+
+## 🔗 Live Website Link 
+
+```bash
+    https://dev-stack-0.vercel.app/
+```
+
+## 📝 Description
+
+DevStack is a simple and interactive website that helps developers explore different technologies and build their ideal development stack. Users can browse available technologies, view their details, add their preferred technologies to a personal stack, and easily manage their selections.
 
 ## Technologies Used
 

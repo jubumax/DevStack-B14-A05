@@ -2,7 +2,7 @@ import logo from "../assets/logo-text.png";
 
 function Footer() {
     return (
-        <footer className="bg-white border-t">
+        <footer id="footer" className="bg-white border-t">
             <div className="max-w-6xl mx-auto px-6 py-12 flex flex-wrap justify-between gap-10">
 
                 {/* Brand block */}
@@ -14,9 +14,9 @@ function Footer() {
                         Curated tools, technologies, and resources for developers building modern software.
                     </p>
                     <div className="flex gap-4 text-sm text-gray-500">
-                        <a href="#">GitHub</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://github.com/jubumax" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://twitter.com/jubaer_001" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://linkedin.com/in/jubaerhasan-an" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
 
@@ -25,8 +25,8 @@ function Footer() {
                     <h4 className="font-semibold text-sm mb-3">PRODUCT</h4>
                     <ul className="flex flex-col gap-2 text-sm text-gray-500">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Technologies</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#technologies">Projects</a></li>
                     </ul>
                 </div>
 
